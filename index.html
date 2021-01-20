@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>MyLim downloader</title>
+  <meta name="description" content="description description">
+  <meta name="author" content="author author">
+  <link rel="stylesheet" href="source/style.css">
+</head>
+<body>
+<p>
+  How to use:
+  <ol>
+    <li>Open and login in your MyLim account <a href="https://mylim.loescher.it/" target="_blank" rel="noopener noreferrer">here</a>.</li>
+    <li>Open the developer tools with CTRL + SHIFT + I and go under the "application" tab, on the list of the left select "local storage" then where it says "https://mylim.loescher.it/" and on the table that will appear look for the "token", click on that. It will appear on the bottom, copy it completly and put it in the token box.
+    </li>
+    <li>You are now ready to rock! Press the button and then select which volumes you want to download, just wait for it to finish and your are good!.</li>
+  </ol>
+</p>
+<div id="working" style="display: none;">Working . . .</div>
+token: <input type="text" id="token">
+<input type="button" value="Grab titles" id="the-button"><br>
+Serarch: <input type="text" id="search"><br>
+Exclude demos: <input type="checkbox" checked id="demos">
+<div id="booklist"></div>
+
+
+<script src="source/script.js"></script>
+</body>
+</html>
