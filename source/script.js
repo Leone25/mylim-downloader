@@ -62,7 +62,7 @@ async function download(isbn, title) {
     let book = await fetch(info.url).then(res => res.blob());
     let link = document.createElement("a");
     link.href = URL.createObjectURL(book);;
-    link.download = title;
+    link.download = title + ".pdf";
     link.click();
     URL.revokeObjectURL(link.href);
 
